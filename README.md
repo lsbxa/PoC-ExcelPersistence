@@ -15,7 +15,7 @@ A Macro, nada mais eh do que um codigo VBA (VBApplication), ela eh baseada em Vi
 
 O que nos interessa e iremos utilizar, sera o `Workbook_Open`
 
-
+![evento](img/20250622003751.png)
 
 Esse evento tambem foi usada pelos APTs.
 
@@ -23,15 +23,15 @@ A extensao `.xlam` (Excel Macro Enable Add-in) eh uma extensao de "add-in", ela 
 
 E com essa informacao, usaremos isso para iniciar nosso metodo de **persistencia**, mesmo quando o user for verificar as Macros existentes, nao ira aparecer. Com isso, poderiamos inserir uma payload de shell reversa, assim fica a nossa Macro, bem simples
 
-
+![macro](img/20250622022421.png)
 
 Agora, salvamos na pasta de inicializacao
 
-
+![shell](img/20250622023017.png)
 
 E por fim, sempre que a vitima abrir o excel, ele vai executar nosso codigo malicioso e conectar uma shell reversa em nossa maquina, assim concluindo a nossa persistencia.
 
-
+![shell](img/20250622022610.png)
 
 Obviamente, isso eh facilmente pego pelo Windows Defender e bloqueado por firewalls, nessa PoC nao iremos aprofundar em evasao nem nada do tipo, mas eh sim completamente possivel! Nossa payload eh facilmente pega por causa de sua assinatura, eh uma payload generica e 99% dos AVs ja tem conhecimento sobre.
 
@@ -39,4 +39,5 @@ Essa tecnica pode ser utilizada em malwares (como ja foi feita) e espalhada em c
 
 Veja que, mesmo sendo um payload generico, nem todos AVs detectaram como malicioso, mesmo sendo **EXPLICITAMENTE** uma reverse shell.
 
-
+![virustotal](img/20250622031422.png)
+![virustotal](img/20250622031500.png)
