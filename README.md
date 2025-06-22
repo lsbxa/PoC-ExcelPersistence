@@ -11,7 +11,7 @@ Essa tecnica foi utilizada em um malware descoberto recentemente, os autores for
 
 A Macro, nada mais eh do que um codigo VBA (VBApplication), ela eh baseada em Visual Basic, o site https://bettersolutions.com/ tem um material interessante mostrando alguns eventos que podem ser possiveis de explorar. Alguns Eventos sao chamados de forma automatica, e esses sao os mais interessantes de se mirar.
 
-
+![site](imgs/Pasted image 20250622003719.png)
 
 O que nos interessa e iremos utilizar, sera o `Workbook_Open`
 
